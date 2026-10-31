@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10B981" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="GreenSpot" />
+    <title>GreenSpot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?r=20261031" />
+  </head>
+  <body>
+    <div id="splash">
+      <img src="logo.png" alt="GreenSpot" />
+      <div class="bar"><i></i></div>
+    </div>
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="" onerror="this.style.display='none'" /><span
+          >Green<b>Spot</b></span
+        >
+      </div>
+      <nav id="nav"></nav>
+      <div class="right">
+        <button class="btn sm ghost" id="cityBtn" title="Città / City">📅</button>
+        <span class="pts hidden" id="pts"></span
+        ><button class="btn sm ghost" id="inst">📲 App</button>
+        <select id="lang" aria-label="Language">
+          <option value="it">IT</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="btn ghost" id="authBtn"></button>
+      </div>
+    </header>
+    <main id="view"></main>
+    <div id="modal" class="overlay hidden"><div class="card modal" id="modalBody"></div></div>
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.17.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js?r=20261031"></script>
+  </body>
+</html>

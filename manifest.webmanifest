@@ -1,0 +1,2 @@
+{"name":"GreenSpot","short_name":"GreenSpot","description":"Insieme per un mondo più pulito","start_url":"./index.html","scope":"./","display":"standalone","orientation":"portrait","background_color":"#ffffff","theme_color":"#10B981",
+"icons":[{"src":"logo.png","sizes":"192x192 512x512 1254x1254","type":"image/png","purpose":"any"}]}
